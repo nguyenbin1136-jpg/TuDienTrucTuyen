@@ -1,0 +1,984 @@
+/* ========================================
+   CAU HINH CHUNG
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #172b4d;
+    background: #f4f7fc;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* ========================================
+   THANH DIEU HUONG
+======================================== */
+
+.topbar {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5eaf2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    flex-shrink: 0;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    background: #2864df;
+    color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.brand-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #172b4d;
+    line-height: 1.2;
+}
+
+.brand-light {
+    color: #2864df;
+}
+
+.brand-text small {
+    display: block;
+    font-size: 11px;
+    color: #8292ad;
+    font-weight: normal;
+    margin-top: 3px;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+}
+
+    .main-menu a {
+        color: #253956;
+        font-size: 15px;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+
+        .main-menu a:hover {
+            color: #2864df;
+        }
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.hello {
+    font-size: 13px;
+    color: #5a6b87;
+}
+
+
+/* ========================================
+   NOI DUNG TRANG
+======================================== */
+
+.page {
+    min-height: 600px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #142543, #20549a);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 50px 56px;
+    margin-bottom: 34px;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+.hero p {
+    color: #dbe7ff;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0;
+}
+
+/* ========================================
+   ONG TIM KIEM (HERO)
+======================================== */
+
+.searchbox {
+    width: 100%;
+    max-width: 760px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+}
+
+    .searchbox input[type="text"] {
+        flex: 1;
+        min-width: 0;
+        height: 46px;
+        padding: 0 16px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        color: #263c5c;
+    }
+
+    .searchbox select {
+        min-width: 128px;
+        height: 46px;
+        padding: 0 12px;
+        border: none;
+        border-left: 1px solid #e1e7f0;
+        outline: none;
+        background: #ffffff;
+        color: #344968;
+    }
+
+    .searchbox .btn {
+        height: 46px;
+        padding: 0 24px;
+        flex-shrink: 0;
+    }
+
+
+/* ========================================
+   TIEU DE KHU VUC
+======================================== */
+
+.section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+    .section-head h2 {
+        font-size: 24px;
+        color: #172b4d;
+    }
+
+    .section-head p {
+        color: #7b8ba5;
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+    .section-head a {
+        color: #2864df;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+
+/* ========================================
+   LUOI THE (CAC LOAI TU DIEN)
+======================================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 34px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tile {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #e4eaf3;
+    border-radius: 16px;
+    padding: 24px;
+    transition: 0.2s;
+}
+
+    .tile:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(27, 57, 105, 0.09);
+        border-color: #c5d8ff;
+    }
+
+.tile-icon {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf3ff;
+    color: #2864df;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.tile h3 {
+    font-size: 18px;
+    color: #172b4d;
+    margin-bottom: 7px;
+}
+
+.tile p {
+    font-size: 14px;
+    color: #7b8ba5;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   TIEU DE TRANG
+======================================== */
+
+.page-title {
+    font-size: 26px;
+    color: #172b4d;
+    margin-bottom: 6px;
+}
+
+.sub-title {
+    color: #7b8ba5;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+
+/* ========================================
+   NUT
+======================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    background: #2864df;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+    .btn:hover {
+        background: #174ebd;
+    }
+
+.btn-primary {
+    background: #2864df;
+    color: #ffffff;
+}
+
+    .btn-primary:hover {
+        background: #174ebd;
+    }
+
+.btn-secondary {
+    background: #edf3ff;
+    color: #2864df;
+}
+
+    .btn-secondary:hover {
+        background: #dce8ff;
+    }
+
+.btn-outline {
+    background: #ffffff;
+    color: #2864df;
+    border: 1px solid #c5d8ff;
+}
+
+    .btn-outline:hover {
+        background: #eef4ff;
+    }
+
+.btn-small {
+    min-height: 36px;
+    padding: 7px 14px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 16px;
+}
+
+    .form-group label,
+    .field label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #344968;
+    }
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input,
+.select,
+.textarea {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 13px;
+    border: 1px solid #dce4f0;
+    border-radius: 9px;
+    background: #ffffff;
+    outline: none;
+    color: #253956;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+    .input:focus,
+    .select:focus,
+    .textarea:focus {
+        border-color: #2864df;
+        box-shadow: 0 0 0 3px rgba(40, 100, 223, 0.1);
+    }
+
+.textarea {
+    min-height: 88px;
+    resize: vertical;
+}
+
+.select {
+    cursor: pointer;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+    .form-row .field {
+        flex: 1;
+    }
+
+
+/* ========================================
+   KHUNG NOI DUNG
+======================================== */
+
+.panel {
+    background: #ffffff;
+    border: 1px solid #e4eaf3;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+    .panel h2,
+    .panel h3 {
+        color: #172b4d;
+        margin-bottom: 14px;
+    }
+
+
+/* ========================================
+   THE TU VUNG
+======================================== */
+
+.word-card {
+    background: #ffffff;
+    border: 1px solid #e4eaf3;
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    transition: 0.2s;
+}
+
+    .word-card:hover {
+        box-shadow: 0 8px 24px rgba(27, 57, 105, 0.08);
+        border-color: #c5d8ff;
+    }
+
+.word-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+    .word-top h3 {
+        font-size: 20px;
+        color: #172b4d;
+    }
+
+.pron {
+    color: #8292ad;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.tag {
+    display: inline-block;
+    background: #edf3ff;
+    color: #2864df;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 11px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.meaning {
+    color: #344968;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.example {
+    color: #5a6b87;
+    font-size: 14px;
+    background: #f7f9fd;
+    border-left: 3px solid #2864df;
+    padding: 10px 14px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 12px;
+}
+
+.word-card > a {
+    color: #2864df;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.external-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+
+/* ========================================
+   THONG BAO
+======================================== */
+
+.note {
+    background: #edf4ff;
+    color: #2457b8;
+    padding: 13px 16px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.message {
+    background: #fff0f0;
+    color: #c03939;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.message.success {
+    background: #e9f8ef;
+    color: #187342;
+}
+
+.message.error {
+    background: #fff0f0;
+    color: #c03939;
+}
+
+
+/* ========================================
+   KHUNG TRONG / RONG
+======================================== */
+
+.empty {
+    background: #ffffff;
+    border: 1px dashed #cfd9ea;
+    border-radius: 14px;
+    padding: 34px;
+    text-align: center;
+    color: #7b8ba5;
+}
+
+    .empty h2 {
+        color: #172b4d;
+        margin-bottom: 10px;
+    }
+
+    .empty p {
+        margin-bottom: 18px;
+    }
+
+.empty-state {
+    color: #7b8ba5;
+    padding: 16px 0;
+}
+
+
+/* ========================================
+   BANG DU LIEU
+======================================== */
+
+table,
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e8edf5;
+    text-align: left;
+}
+
+th {
+    background: #edf3ff;
+    color: #24477d;
+    font-weight: 700;
+}
+
+tr:hover td {
+    background: #f7f9fd;
+}
+
+.link-danger {
+    color: #c03939;
+}
+
+    .link-danger:hover {
+        color: #a02828;
+    }
+
+
+/* ========================================
+   TRANG ADMIN
+======================================== */
+
+.stats {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    flex: 1;
+    min-width: 160px;
+    background: #ffffff;
+    border: 1px solid #e4eaf3;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+    .stat strong {
+        display: block;
+        font-size: 30px;
+        color: #2864df;
+    }
+
+    .stat span {
+        color: #7b8ba5;
+        font-size: 14px;
+    }
+
+.admin-nav {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    background: #ffffff;
+    border: 1px solid #e4eaf3;
+    border-radius: 12px;
+    padding: 7px;
+    margin-bottom: 24px;
+}
+
+    .admin-nav a {
+        padding: 9px 16px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #344968;
+        transition: 0.2s;
+    }
+
+        .admin-nav a:hover {
+            background: #eef4ff;
+            color: #2864df;
+        }
+
+        .admin-nav a.active {
+            background: #2864df;
+            color: #ffffff;
+        }
+
+
+/* ========================================
+   DANG NHAP / DANG KY
+======================================== */
+
+.auth-wrap {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   CHAN TRANG
+======================================== */
+
+.footer {
+    background: #ffffff;
+    border-top: 1px solid #e5eaf2;
+    padding: 26px 0;
+    margin-top: 20px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #8292ad;
+    font-size: 13px;
+}
+
+    .footer-inner strong {
+        color: #2864df;
+        font-size: 15px;
+    }
+
+    .footer-inner p {
+        margin-top: 3px;
+    }
+
+
+/* ========================================
+   TRANG CA NHAN
+======================================== */
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 8px 0 26px;
+}
+
+.profile-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2864df, #52a6f5);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(40, 100, 223, .18);
+}
+
+.eyebrow {
+    display: block;
+    color: #2864df;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.muted,
+.field-help {
+    color: #7b8ba5;
+}
+
+.field-help {
+    font-size: 12px;
+}
+
+.validation {
+    color: #d04444;
+    font-size: 12px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+}
+
+.profile-panel,
+.profile-summary {
+    padding: 26px;
+}
+
+.profile-panel h2,
+.profile-summary h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.panel-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-summary {
+    margin-top: 22px;
+}
+
+.profile-history {
+    list-style: none;
+    margin: 16px 0;
+}
+
+    .profile-history li {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding: 10px 0;
+        border-bottom: 1px solid #edf1f7;
+        color: #344968;
+    }
+
+.history-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3982ed;
+    flex: 0 0 8px;
+}
+
+.text-link {
+    color: #2864df;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
+
+@media screen and (max-width: 992px) {
+    .nav {
+        flex-wrap: wrap;
+        gap: 14px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        min-height: auto;
+    }
+
+    .main-menu {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .grid,
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE - DIEN THOAI
+======================================== */
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .main-menu {
+        gap: 12px;
+    }
+
+        .main-menu a {
+            font-size: 13px;
+        }
+
+    .account {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 28px 20px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .searchbox {
+        flex-wrap: wrap;
+    }
+
+        .searchbox input[type="text"] {
+            flex-basis: 100%;
+        }
+
+        .searchbox select {
+            flex: 1;
+            border-left: none;
+        }
+
+        .searchbox .btn {
+            flex: 1;
+        }
+
+    .grid,
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .section-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}

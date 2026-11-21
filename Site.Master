@@ -1,0 +1,139 @@
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.Master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head runat="server">
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+            Từ Điển Online
+        </asp:ContentPlaceHolder>
+    </title>
+
+    <link
+        href="<%= ResolveUrl("~/Content/style.css") %>"
+        rel="stylesheet"
+        type="text/css" />
+
+    <script
+        src="<%= ResolveUrl("~/Scripts/app.js") %>"
+        type="text/javascript"
+        defer="defer">
+    </script>
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+        <!-- THANH DIEU HUONG -->
+
+        <header class="topbar">
+
+            <div class="container nav">
+
+                <a class="brand" href="<%= ResolveUrl("~/Default.aspx") %>">
+
+                    <span class="brand-icon">
+                        T
+                    </span>
+
+                    <span class="brand-text">
+
+                        TuDien<span class="brand-light">Online</span>
+
+                        <small>
+                            Tra cứu tri thức mỗi ngày
+                        </small>
+
+                    </span>
+
+                </a>
+
+                <nav class="main-menu">
+
+                    <a href="<%= ResolveUrl("~/Default.aspx") %>">
+                        Trang chủ
+                    </a>
+
+                    <a href="<%= ResolveUrl("~/TraCuu.aspx") %>">
+                        Tra cứu
+                    </a>
+
+                    <a href="<%= ResolveUrl("~/TraCuuNgoai.aspx") %>">
+                        Tra cứu ngoài
+                    </a>
+
+                    <asp:PlaceHolder ID="phUser" runat="server">
+
+                        <a href="<%= ResolveUrl("~/CaNhan.aspx") %>">Trang cá nhân</a>
+                        <a href="<%= ResolveUrl("~/LichSu.aspx") %>">Lịch sử</a>
+
+                    </asp:PlaceHolder>
+
+                    <asp:PlaceHolder ID="phAdmin" runat="server" Visible="false">
+
+                        <a href="<%= ResolveUrl("~/Admin/Default.aspx") %>">
+                            Quản trị
+                        </a>
+
+                        <a href="<%= ResolveUrl("~/Admin/QuanLyTu.aspx") %>">
+                            Quản lý từ
+                        </a>
+
+                    </asp:PlaceHolder>
+
+                </nav>
+
+                <div class="account">
+
+                    <asp:Literal ID="litAccount" runat="server" />
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- NOI DUNG CHINH -->
+
+        <main class="container page">
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        </main>
+
+        <!-- CHAN TRANG -->
+
+        <footer class="footer">
+
+            <div class="container footer-inner">
+
+                <div>
+                    <strong>TuDienOnline</strong>
+                    <p>Website tra cứu từ điển trực tuyến.</p>
+                </div>
+
+                <div>
+                    <p>© 2026 TuDienOnline</p>
+                    <p>Học tập và khám phá tri thức mỗi ngày.</p>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Words>
+  <Word id="1" type="Anh - Việt">
+    <Text>hello</Text>
+    <Pronunciation>/həˈləʊ/</Pronunciation>
+    <PartOfSpeech>Thán từ</PartOfSpeech>
+    <Meaning>Xin chào; lời chào dùng khi gặp ai đó.</Meaning>
+    <Example>Hello, how are you? – Xin chào, bạn khỏe không?</Example>
+    <Synonyms>hi; greetings</Synonyms>
+  </Word>
+  <Word id="2" type="Anh - Việt">
+    <Text>book</Text>
+    <Pronunciation>/bʊk/</Pronunciation>
+    <PartOfSpeech>Danh từ</PartOfSpeech>
+    <Meaning>Quyển sách; tài liệu gồm nhiều trang được đóng lại.</Meaning>
+    <Example>I read a book every week. – Tôi đọc một quyển sách mỗi tuần.</Example>
+    <Synonyms>volume</Synonyms>
+  </Word>
+  <Word id="3" type="Anh - Việt">
+    <Text>computer</Text>
+    <Pronunciation>/kəmˈpjuːtə(r)/</Pronunciation>
+    <PartOfSpeech>Danh từ</PartOfSpeech>
+    <Meaning>Máy tính; thiết bị điện tử dùng để xử lý và lưu trữ dữ liệu.</Meaning>
+    <Example>My computer is new. – Máy tính của tôi mới.</Example>
+    <Synonyms>PC; machine</Synonyms>
+  </Word>
+  <Word id="4" type="Anh - Việt">
+    <Text>beautiful</Text>
+    <Pronunciation>/ˈbjuːtɪfl/</Pronunciation>
+    <PartOfSpeech>Tính từ</PartOfSpeech>
+    <Meaning>Đẹp; có vẻ ngoài hoặc đặc điểm làm người khác thích thú.</Meaning>
+    <Example>It is a beautiful day. – Hôm nay là một ngày đẹp trời.</Example>
+    <Synonyms>pretty; lovely</Synonyms>
+  </Word>
+  <Word id="5" type="Việt - Anh">
+    <Text>xin chào</Text>
+    <Pronunciation />
+    <PartOfSpeech>Thán từ</PartOfSpeech>
+    <Meaning>hello; hi; greetings.</Meaning>
+    <Example>Xin chào, tôi tên là Nam. – Hello, my name is Nam.</Example>
+    <Synonyms>chào hỏi</Synonyms>
+  </Word>
+  <Word id="6" type="Anh - Anh">
+    <Text>success</Text>
+    <Pronunciation>/səkˈses/</Pronunciation>
+    <PartOfSpeech>Noun</PartOfSpeech>
+    <Meaning>The achievement of something that you have been trying to do.</Meaning>
+    <Example>Hard work is the key to success.</Example>
+    <Synonyms>achievement; accomplishment</Synonyms>
+  </Word>
+</Words>

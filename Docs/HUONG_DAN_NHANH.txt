@@ -1,0 +1,20 @@
+TU DIEN ONLINE - BAN DA BO SUNG TRANG CA NHAN
+
+1. Mo Visual Studio -> File -> Open -> Web Site...
+2. Chon thu muc TuDienTrucTuyen_ASPNET_BanHoanChinh.
+3. Chay Default.aspx bang IIS Express (Ctrl + F5).
+4. Tai khoan quan tri demo: admin / Admin@123
+5. Tao tai khoan thanh vien tai Register.aspx de thu trang ca nhan.
+6. Dang nhap -> chon Trang ca nhan tren menu.
+
+TRANG CA NHAN BAO GOM:
+- Xem ten dang nhap va vai tro.
+- Cap nhat ho ten hien thi.
+- Doi mat khau (can mat khau hien tai, toi thieu 6 ky tu).
+- Xem 5 luot tra cuu gan nhat trong phien.
+- Link sang trang lich su tra cuu.
+
+PHAM VI:
+- ASP.NET Web Forms, C#, .NET Framework 4.5+.
+- Khong dung SQL Server theo pham vi Lap trinh Web Co Ban.
+- Du lieu demo luu XML trong App_Data.
